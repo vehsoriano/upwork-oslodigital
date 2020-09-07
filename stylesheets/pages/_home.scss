@@ -6,6 +6,80 @@
 
 .home {
   .section-banner {
-    background: url('../../assets/images/')
+    background: url('../../assets/images/banner.png') 0% 0% no-repeat;
+    background-position: center;
+  }
+
+  .section-vi-setter {
+    .fp-tableCell {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .holder-text {
+      width: 50%;
+    }
+
+    .holder-image {
+      width: 50%;
+    }
+  }
+
+  .section-list {
+    .holder-text {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .first {
+      width: 50%;
+    }
+
+    .second {
+      width: 50%;
+    }
+
+    .title {
+      color: #707070;
+    }
+
+    .text {
+      color: #707070;
+      font-size: 14px;
+    }
+  }
+
+  .section-background {
+    .holder-pane {
+      display: flex;
+      height: 100%;
+    }
+
+    .holder-left-pane {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 100px;
+      width: 50%;
+      height: 100%;
+      background-color: #EBEBEB;
+    }
+
+    .holder-right-pane {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+    }
+
+    .list {
+      margin-bottom: 90px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
+
+    
