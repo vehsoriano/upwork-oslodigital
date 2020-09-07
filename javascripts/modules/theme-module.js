@@ -25,3 +25,13 @@ new fullpage("#fullpage", {
   licenseKey: "YOUR KEY HERE",
   sectionsColor: ["yellow", "orange", "#C0C0C0", "#ADD8E6"],
 });
+
+$(document).ready(function () {
+  console.log("ready!");
+  var swiper = new Swiper(".swiper-container", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+});
