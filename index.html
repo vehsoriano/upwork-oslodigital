@@ -11,7 +11,7 @@
   <link rel="icon" href="assets/images/icon.ico">
 
   <title>Quirky Teams - Creating Cool Stuffs</title>
-  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/fullpage.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/main.min.css">
 
   <!--[if lte IE 9]>
@@ -40,10 +40,13 @@
 
   <main class="home">
     <div id="fullpage">
-      <div class="section">Some section</div>
-      <div class="section">Some section</div>
-      <div class="section">Some section</div>
-      <div class="section">Some section</div>
+      <div class="section">One</div>
+      <div class="section">
+        <div class="slide" data-anchor="slide1">Two 1</div>
+        <div class="slide" data-anchor="slide2">Two 2</div>
+      </div>
+      <div class="section">Three</div>
+      <div class="section">Four</div>
     </div>
   </main>
 
@@ -55,8 +58,7 @@
   <script src="javascripts/vendors/popper.min.js"></script>
   <script src="javascripts/vendors/bootstrap.min.js"></script>
   <script src="javascripts/core/base.js"></script>
-  <script type="text/javascript" src="http://expansionscollective.com/testscripts/jquery.fullPage.js"></script>
-  <script> $(document).ready(function() { $('#fullpage').fullpage(); });</script>
+  <script src="javascripts/vendors//fullpage.js"></script>
   <script src="javascripts/modules/theme-module.js"></script>
   <script src="javascripts/bootstrapper.js"></script>
 
