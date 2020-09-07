@@ -1,0 +1,177 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  @include on-event {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
+
+.btn,
+a {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+
+  @include on-event {
+    outline: 0;
+    @include boxshadow(none);
+  }
+}
+
+/**
+ * Basic styles for input fields
+ */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-focus-ring-color: none;
+  outline: none;
+
+  @include on-event {
+    @include boxshadow(none);
+  }
+}
+
+//styles for navbar-toggler
+.collapsing {
+  transition: height .5s ease;
+}
+
+.navbar-toggler {
+  padding: 10px 0;
+
+  border: 0;
+  border-radius: 0;
+
+  .icon-bar {
+    display: block;
+    height: 4px;
+    width: 29px;
+
+    background: #000;
+
+    @include transition(.5s cubic-bezier(0.65, 0.05, 0.36, 1));
+
+    @include boxshadow(none);
+
+    &+.icon-bar {
+      margin-top: 4px;
+    }
+     
+    &:first-child {
+      animation: outTop .5s backwards;
+      animation-direction: reverse;
+    }
+
+    &:nth-child(2) {
+      animation: outMiddle .5s backwards;
+      animation-direction: reverse;
+    }
+
+    &:last-child {
+      animation: outBottom .5s backwards;
+      animation-direction: reverse;
+    }
+  }
+
+  &[aria-expanded="true"] {
+    .icon-bar {
+      &:first-child {
+        animation: inTop .5s forwards;
+      }
+
+      &:nth-child(2) {
+        animation: inMiddle .5s forwards;
+      }
+
+      &:last-child {
+        animation: inBottom .5s forwards;
+        opacity: 0;
+      }
+    }
+  }
+
+  @include on-event() {
+    outline: 0;
+  }
+}
+
+@keyframes inTop {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(8px) rotate(0);
+  }
+  100% {
+    transform: translateY(8px) rotate(132deg);
+  }
+}
+
+@keyframes outTop {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(8px) rotate(0);
+  }
+  100% {
+    transform: translateY(8px) rotate(132deg);
+  }
+}
+
+@keyframes inMiddle {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes outMiddle {
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes inBottom {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0);
+  }
+  100% {
+    transform: translateY(-8px) rotate(132deg);
+  }
+}
+
+@keyframes outBottom {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-8px) rotate(132deg);
+  }
+}
+
