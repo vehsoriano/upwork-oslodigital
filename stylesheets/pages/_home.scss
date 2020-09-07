@@ -6,7 +6,7 @@
 
 .home {
   .section-banner {
-    background: url('../../assets/images/banner.png') 0% 0% no-repeat;
+    background: url("../../assets/images/banner.png") 0% 0% no-repeat;
     background-position: center;
   }
 
@@ -62,7 +62,7 @@
       padding: 0 100px;
       width: 50%;
       height: 100%;
-      background-color: #EBEBEB;
+      background-color: #ebebeb;
     }
 
     .holder-right-pane {
@@ -98,10 +98,10 @@
 
     .form-button {
       padding: 10px;
-      
+
       color: white;
       font-size: 14px;
-      
+
       background-color: black;
       border: none;
       border-radius: 5px;
@@ -109,4 +109,38 @@
   }
 }
 
-    
+// ara
+.card-img {
+  position: relative;
+}
+
+.fa-play-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  font-size: 44px;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: 0.2s all ease-in-out;
+  &:hover {
+    font-size: 55px;
+  }
+}
+.overlay {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(246 0 2 / 70%);
+  opacity: 0;
+  visibility: hidden;
+}
