@@ -80,6 +80,33 @@
       }
     }
   }
+
+  .section-newsletter {
+    .form-input {
+      border: none;
+      border-bottom: 1px solid black;
+      padding-bottom: 6px;
+    }
+
+    .holder-form-group {
+      display: flex;
+    }
+
+    .form-group-input {
+      margin-right: 25px;
+    }
+
+    .form-button {
+      padding: 10px;
+      
+      color: white;
+      font-size: 14px;
+      
+      background-color: black;
+      border: none;
+      border-radius: 5px;
+    }
+  }
 }
 
     
