@@ -106,41 +106,145 @@
       border: none;
       border-radius: 5px;
     }
+
+    .card-img {
+      position: relative;
+    }
+    
+    .fa-play-circle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      font-size: 44px;
+      height: 100%;
+      width: 100%;
+      right: 0;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      transition: 0.2s all ease-in-out;
+
+      &:hover {
+        font-size: 55px;
+      }
+    }
+  }
+
+  .section-portfolio {
+    .holder-pane {
+      display: flex;
+    }
+
+    .fp-tableCell {
+      height: 100% !important;
+    }
+
+    .container-fluid {
+      padding: 0;
+    }
+
+    .swiper-container {
+      height: 100%;
+    }
+
+    .holder-pane {
+      height: 100%;
+    }
+
+    .holder-left-pane {
+      width: 50%;
+
+      background: url('../../assets/images/ecommerce-case.png');
+    }
+
+    .holder-right-pane {
+      width: 50%;
+    }
+
+    .image-background {
+      width: 100%;
+      height: auto;
+    }
+
+    .holder-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 100px;
+      height: 100%;
+
+      color: white;
+    }
+  }
+
+  .section-vr {
+    .holder-pane {
+      display: flex;
+    }
+
+    .fp-tableCell {
+      height: 100% !important;
+    }
+
+    .container-fluid {
+      padding: 0;
+    }
+
+    .swiper-container {
+      height: 100%;
+    }
+
+    .holder-pane {
+      height: 100%;
+    }
+
+    .holder-left-pane {
+      width: 50%;
+
+      background: url('../../assets/images/vr-cases.png');
+    }
+
+    .header-video {
+      height: 100%;
+      object-fit: cover;
+
+      position: absolute;
+      left: 0;
+      top: 50%;
+      z-index: 1;
+
+      width: 100%;
+
+      outline: none;
+      border: none;
+
+      transform: translateY(-50%);
+
+      overflow: hidden;
+    }
+
+    .holder-right-pane {
+      position: relative;
+      width: 50%;
+    }
+
+    .image-background {
+      width: 100%;
+      height: auto;
+    }
+
+    .holder-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 100px;
+      height: 100%;
+
+      color: white;
+    }
   }
 }
 
-// ara
-.card-img {
-  position: relative;
-}
-
-.fa-play-circle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  font-size: 44px;
-  height: 100%;
-  width: 100%;
-  right: 0;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  transition: 0.2s all ease-in-out;
-  &:hover {
-    font-size: 55px;
-  }
-}
-.overlay {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: rgb(246 0 2 / 70%);
-  opacity: 0;
-  visibility: hidden;
-}

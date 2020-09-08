@@ -50,6 +50,20 @@ input[type="text"] {
   }
 }
 
+
+.overlay {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  // background: rgb(246 0 2 / 70%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+
 //styles for navbar-toggler
 .collapsing {
   transition: height .5s ease;
