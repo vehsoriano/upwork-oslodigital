@@ -30,6 +30,7 @@
     .holder-text {
       display: flex;
       flex-direction: row;
+      padding: 70px;
     }
 
 
@@ -88,6 +89,10 @@
       border: none;
       border-bottom: 1px solid black;
       padding-bottom: 6px;
+    }
+
+    .holder-newsletter {
+      margin-bottom: 140px;
     }
 
     .holder-form-group {
@@ -247,6 +252,83 @@
       height: 100%;
 
       color: white;
+    }
+  }
+
+  .section-team {
+
+    .list {
+      display: flex;
+      width: 48%;
+      margin-bottom: 45px;
+    }
+
+    .image {
+      width: auto;
+      height: 100%;
+    }
+
+    .holder-text {
+      display: flex;
+      flex-direction: column;
+      margin-left: 25px;
+    }
+
+    .name {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .position {
+      font-size: 21px;
+    }
+
+    .holder-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .holder-contact-list {
+      display: flex;
+    }
+
+    .contact-list {
+      margin: 8px;
+      font-size: 14px;
+      font-weight: bold;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .contact-list {
+      .social {
+        font-weight: normal;
+      }
+    }
+
+    .social {
+      .fa-linkedin-in {
+        padding: 5px;
+
+        font-size: 12px;
+        color: white;
+
+        background-color: $black;
+        border-radius: 50%;
+      }   
+    }
+
+    .contact-link {
+      display: flex;
+      color: $black;
     }
   }
 }
