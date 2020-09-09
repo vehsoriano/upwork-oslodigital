@@ -241,8 +241,8 @@
           </div>
         </div>
         <!-- Add Arrows -->
-        <div class="swiper-button-next custom-swiper-next"></div>
-        <div class="swiper-button-prev custom-swiper-prev"></div>
+        <div class="swiper-button swiper-button-next custom-swiper-next"></div>
+        <div class="swiper-button swiper-button-prev custom-swiper-prev"></div>
       </div>
       <div class="section section-vr">
         <div class="swiper-container case-study container-fluid">
@@ -296,21 +296,21 @@
           </div>
         </div>
         <!-- Add Arrows -->
-        <div class="swiper-button-next custom-swiper-next"></div>
-        <div class="swiper-button-prev custom-swiper-prev"></div>
+        <div class="swiper-button swiper-button-next custom-swiper-next"></div>
+        <div class="swiper-button swiper-button-prev custom-swiper-prev"></div>
       </div>
       <div class="section section-newsletter">
         <div class="container">
           <div class="holder-newsletter">
             <h4 class="title">Video fra Oslo Digital</h4>
             <p class="desc">Vil du holde deg oppdatert, registrer deg her.</p>
-            <form class="form">
+            <form class="form" method="post" action="">
               <div class="holder-form-group">
                 <div class="form-group-input">
                   <input name="email" type="email" class="form-input email" placeholder="Din e-post" />
                 </div>
                 <div class="holder-button">
-                  <input type="button" value="Hold meg oppdatert" class="form-button" />
+                  <input type="submit" value="Hold meg oppdatert" class="form-button black" />
                 </div>
               </div>
             </form>
@@ -378,6 +378,7 @@
       <div class="section section-team">
         <div class="container-fluid">
           <div class="holder-team">
+            <h5 class="title">Core team</h5>
             <ul class="holder-list">
               <li class="list">
                 <img src="./assets/images/core-team-filip.png" class="image" alt="Filip Icon">
@@ -532,18 +533,37 @@
                 <h5 class="title">Kontakt oss</h5>
                 <p class="desc">Vi vil gjerne snakke med deg!</p>
                 <div class="form-group">
-                  <input type="text" name="name" class="form-input  hw-input" placeholder="Ditt navn" >
+                  <input type="text" name="name" class="form-input  hw-input" placeholder="Ditt navn" required>
                 </div>
                 <div class="form-group">
-                  <input type="email" name="email" class="form-input  hw-input" placeholder="Din e-post" >
+                  <input type="email" name="email" class="form-input  hw-input" placeholder="Din e-post" required>
                 </div>
                 <div class="form-group">
-                  <input type="text" name="message" class="form-input fw-input" placeholder="Din melding" >
+                  <input type="text" name="message" class="form-input fw-input" placeholder="Din melding" required>
                 </div>
                 <div class="form-group">
-                  <input type="button" value="Send" class="form-button">
+                  <input type="submit" value="Send" class="form-button white">
                 </div>
-              </form>
+              </form>              
+              <strong class="text social-text">Følg oss på sosiale medier:</strong>
+              <ul class="holder-list">
+                <li class="list">
+                  <a href="" class="list-link">
+                    <i class="fab fa-linkedin-in icon"></i>
+                  </a>
+                </li>
+                <li class="list">
+                  <a href="" class="list-link">
+                    <i class="fab fa-facebook-f icon"></i>
+                  </a>
+                </li>
+                <li class="list">
+                  <a href="" class="list-link">
+                    <i class="fab fa-instagram icon"></i>
+                  </a>
+                </li>
+              </ul>
+              <!-- <p class="copyright text">Copyright 2020 Oslodigital AS</p> -->
             </div>
           </div>
         </div>

@@ -32,22 +32,40 @@
         width: 152px;
         height: 60px;
         border-radius: 10px;
-        border: 1px solid #ffffff;
-        background-color: #000000;
         display: block;
-        color: #ffffff;
         font-family: "PT Sans";
         font-size: 21px;
         font-weight: 700;
         line-height: 35px;
-        margin-top: 30px;
         transition: all 0.3s ease-out;
+        outline: none;
 
         cursor: pointer;
 
-        &:hover {
-            background-color: #fff;
-            color: $black;
+
+        &.black {
+            border: 1px solid $white;
+            background-color: $black;
+            color: $white;
+
+            &:hover {
+                background-color: $white;
+                color: $black;
+            }
         }
+
+        &.white {
+            border: 1px solid $black;
+            background-color: $white;
+            color: $black;
+
+            &:hover {
+                border: 1px solid $white;
+                background-color: $black;
+                color: $white;
+            }
+        }
+
+        
     }
 }

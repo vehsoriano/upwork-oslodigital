@@ -24,6 +24,7 @@ AppName.Modules.ThemeModule = (function () {
 new fullpage("#fullpage", {
   licenseKey: "YOUR KEY HERE",
   // sectionsColor: ["yellow", "orange", "#C0C0C0", "#ADD8E6"],
+  anchors:['1', '2', '3', '4', '5', '6', '7', '8', '9']
 });
 
 $(document).ready(function () {

@@ -127,69 +127,47 @@ input[type="text"] {
   }
 }
 
-@keyframes inTop {
-  0% {
-    transform: translateY(0) rotate(0);
+.swiper-button {
+  border: none;
+  width: 54px;
+  height: 54px;
+  background-color: $black;
+  border-radius: 50%;
+  outline: none;
+
+  transition: all .3s ease;
+
+  &-disabled {
+    display: none;
   }
-  50% {
-    transform: translateY(8px) rotate(0);
+
+  &:hover {
+    background-color: $white;
+
+    &.swiper-button-next,
+    &.swiper-button-prev {
+      &:after {
+        color: $black;
+      }
+    }
   }
-  100% {
-    transform: translateY(8px) rotate(132deg);
+
+  &-next,
+  &-prev {
+    &:after {
+      color: $white;
+      font-size: 22px;
+      font-weight: bold;
+
+      transition: all .3s ease;
+    }
+  }
+
+  &-next {
+    right: 35px;
+  }
+
+  &-prev {
+    left: 35px;
   }
 }
-
-@keyframes outTop {
-  0% {
-    transform: translateY(0) rotate(0);
-  }
-  50% {
-    transform: translateY(8px) rotate(0);
-  }
-  100% {
-    transform: translateY(8px) rotate(132deg);
-  }
-}
-
-@keyframes inMiddle {
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(45deg);
-  }
-}
-
-@keyframes outMiddle {
-  50% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(45deg);
-  }
-}
-
-@keyframes inBottom {
-  0% {
-    transform: translateY(0) rotate(0);
-  }
-  50% {
-    transform: translateY(-8px) rotate(0);
-  }
-  100% {
-    transform: translateY(-8px) rotate(132deg);
-  }
-}
-
-@keyframes outBottom {
-  0% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-9px) rotate(0deg);
-  }
-  100% {
-    transform: translateY(-8px) rotate(132deg);
-  }
-}
-
