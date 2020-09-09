@@ -85,12 +85,6 @@
   }
 
   .section-newsletter {
-    .form-input {
-      border: none;
-      border-bottom: 1px solid black;
-      padding-bottom: 6px;
-    }
-
     .holder-newsletter {
       margin-bottom: 140px;
     }
@@ -100,18 +94,38 @@
     }
 
     .form-group-input {
-      margin-right: 25px;
+      margin-right: 65px;
+    }
+
+    .form-input {
+      width: 340px;    
+      color: #707070;
+    }
+
+    .title {
+      font-size: 47px;
+    }
+
+    .desc {
+      margin-bottom: 39px;
+
+      color: #707070;
+      font-size: 21px;
     }
 
     .form-button {
-      padding: 10px;
-
-      color: white;
-      font-size: 14px;
-
-      background-color: black;
-      border: none;
-      border-radius: 5px;
+      width: 225px;
+      display: inline-block;
+      border-radius: 10px;
+      border: 2px solid #000000;
+      background-color: #000000;
+      color: #ffffff;
+      font-family: "PT Sans";
+      font-size: 21px;
+      font-weight: 700;
+      height: 60px;
+      line-height: 35px;
+      transition: all 0.3s ease-out;
     }
 
     .card-img {
@@ -259,7 +273,7 @@
 
     .list {
       display: flex;
-      width: 48%;
+      width: 45%;
       margin-bottom: 45px;
     }
 
@@ -272,6 +286,10 @@
       display: flex;
       flex-direction: column;
       margin-left: 25px;
+    }
+
+    .holder-team {
+      padding: 0 75px;
     }
 
     .name {
@@ -287,7 +305,7 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-between;
+      // justify-content: space-between;
     }
 
     .holder-contact-list {
@@ -329,6 +347,95 @@
     .contact-link {
       display: flex;
       color: $black;
+    }
+  }
+
+  .section-cta {
+    .holder-pane {
+      display: flex;
+      height: 100%;
+    }
+
+    .holder-left-pane {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 75px;
+      width: 50%;
+
+      background-color: #EBEBEB;
+      
+      .image {
+        &.xvr {
+          width: 65px;
+          margin-right: 7px;
+        }
+
+        &.dynamic {
+          width: 123px;
+        }
+
+        &.commerce {
+          width: 180px;
+        }
+      }
+    }
+
+    .holder-list {
+      display: flex;
+    }
+
+    .list {
+      display: flex;
+      align-items: center;
+    }
+
+    .holder-right-pane {
+      width: 50%;
+
+      background-color: #000000;
+    }
+
+    .title {
+      margin-bottom: 16px;
+      font-size: 47px;
+    }
+    
+    .desc {
+      max-width: 650px;
+      width: 100%;
+
+      color: #707070;
+      line-height: 35px;
+      font-size: 21px;
+    }
+
+    .subtitle {
+      margin: 19px 0 25px;
+
+      font-size: 21px;
+      color: #000;
+    }
+
+    .holder-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      padding: 100px;
+
+
+      .title {
+        color: $white;
+      }
+
+      .desc {
+        color: #707070;
+      }
+    }
+
+    .form-group {
+      margin-bottom: 30px;
     }
   }
 }

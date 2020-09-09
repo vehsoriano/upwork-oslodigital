@@ -7,3 +7,14 @@ body {
   color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
 }
+
+
+.title {
+  font-size: 47px;
+  font-family: 'DM Serif Display', serif;
+}
+
+.desc,
+.text {
+  font-family: 'PT Sans', sans-serif;
+}

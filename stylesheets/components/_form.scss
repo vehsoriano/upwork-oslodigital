@@ -1,0 +1,53 @@
+.form {
+    .form-input {
+        height: 60px;
+        
+        border: none;
+        border-bottom: 1px solid #333333;
+        background-color: transparent;
+        
+        font-size: 21px;
+        font-family: 'PT Sans', sans-serif;
+
+        input:-webkit-autofill {
+            -webkit-text-fill-color: yellow !important;
+        }
+
+        &::placeholder {
+            font-family: 'PT Sans', sans-serif;
+            color: gray;
+        }
+
+        &.hw-input {
+            width: 342px;
+            max-width: 100%;
+        } 
+
+        &.fw-input {
+            width: 100%;
+        }
+    }
+
+    .form-button {
+        width: 152px;
+        height: 60px;
+        border-radius: 10px;
+        border: 1px solid #ffffff;
+        background-color: #000000;
+        display: block;
+        color: #ffffff;
+        font-family: "PT Sans";
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 35px;
+        margin-top: 30px;
+        transition: all 0.3s ease-out;
+
+        cursor: pointer;
+
+        &:hover {
+            background-color: #fff;
+            color: $black;
+        }
+    }
+}
