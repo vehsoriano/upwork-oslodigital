@@ -24,7 +24,7 @@ AppName.Modules.ThemeModule = (function () {
 new fullpage("#fullpage", {
   licenseKey: "YOUR KEY HERE",
   // sectionsColor: ["yellow", "orange", "#C0C0C0", "#ADD8E6"],
-  anchors:['1', '2', '3', '4', '5', '6', '7', '8', '9']
+  anchors:['home', 'about', 'services', 'clients', 'cases', 'virtual-reality', 'newsletter', 'our-team', 'contact-us']
 });
 
 $(document).ready(function () {
@@ -37,9 +37,9 @@ $(document).ready(function () {
   });
 
   var swiperNewsletter = new Swiper(".swiper-container.newsletter", {
-    slidesPerView: 3,
+    slidesPerView: 'auto',
     spaceBetween: 30,
-    loop: true,
+    // loop: true,
   });
 
   var $videoSrc;
