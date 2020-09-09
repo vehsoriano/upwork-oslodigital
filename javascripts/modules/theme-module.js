@@ -27,7 +27,7 @@ $(document).ready(function () {
     new fullpage("#fullpage", {
       licenseKey: "YOUR KEY HERE",
       // sectionsColor: ["yellow", "orange", "#C0C0C0", "#ADD8E6"],
-      anchors:['home', 'about', 'services', 'clients', 'cases', 'virtual-reality', 'newsletter', 'our-team', 'contact-us']
+      anchors:['home', 'about-strategy', 'about-technology', 'about-social', 'clients', 'cases', 'virtual-reality', 'newsletter', 'our-team', 'contact-us']
     });
   }
 })
