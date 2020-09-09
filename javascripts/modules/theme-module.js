@@ -21,20 +21,16 @@ AppName.Modules.ThemeModule = (function () {
   };
 })();
 
-new fullpage("#fullpage", {
+
+$(document).ready(function () {
+  if($(window).width() > 991) {
+    new fullpage("#fullpage", {
       licenseKey: "YOUR KEY HERE",
       // sectionsColor: ["yellow", "orange", "#C0C0C0", "#ADD8E6"],
       anchors:['home', 'about', 'services', 'clients', 'cases', 'virtual-reality', 'newsletter', 'our-team', 'contact-us']
     });
-
-// $(window).on("resize", function () {
-//   var windowWidth = $(window).width();
-
-//   console.log(windowWidth)
-//   if(windowWidth > 768) {
-    
-//   }
-// }).resize();
+  }
+})
 
 $(document).ready(function () {
   console.log("ready!");
