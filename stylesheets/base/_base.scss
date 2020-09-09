@@ -171,3 +171,24 @@ input[type="text"] {
     left: 35px;
   }
 }
+
+
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce-1 {
+  0%   { 
+    transform: translateY(0); 
+    opacity: 1;
+  }
+  50%  { 
+    transform: translateY(10px); 
+    opacity: 0;
+  }
+  100% { 
+    transform: translateY(0); 
+    opacity: 1;
+  }
+}

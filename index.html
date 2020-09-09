@@ -46,9 +46,16 @@
   <main class="home">
     <div id="fullpage">
       <div class="section section-banner">
-        <div class="container"></div>
+        <div class="scrollIndicatorBlock">
+          <a href="#about" class="link">
+              <span class="scrollIndicatorText">Skroll nedover</span>
+              <div class="scrollIndicatorIcon bounce-1">
+                <span class="fas fa-angle-down"></span>
+              </div>
+          </a>
+        </div>
       </div>
-      <div class="section section-vi-setter">
+      <div class="section section-vi-setter fp-auto-height">
         <div class="holder-text">
           <div class="container">
             <div class="text-wrapper">
@@ -159,27 +166,29 @@
           </div>
         </div>
       </div>
-      <div class="section section-background">
+      <div class="section section-clients">
         <div class="holder-pane">
           <div class="holder-left-pane">
-            <h2 class="title">Vår bakgrunn</h2>
-            <p class="text">
-              Menneskene hos Oslo Digital har jobbet for mange nordiske brand som ansatte eller konsulenter og klienter.
-            </p>
+            <div class="holder-text">
+              <h2 class="title">Vår bakgrunn</h2>
+              <p class="text">
+                Menneskene hos Oslo Digital har jobbet for mange nordiske brand som ansatte eller konsulenter og klienter.
+              </p>
+            </div>
           </div>
           <div class="holder-right-pane">
             <ul class="holder-images-list">
               <li class="list">
-                <img src="./assets/images/image-background-1.png" />
+                <img src="./assets/images/image-background-1.png" class="image"/>
               </li>
               <li class="list">
-                <img src="./assets/images/image-background-2.png" />
+                <img src="./assets/images/image-background-2.png" class="image"/>
               </li>
               <li class="list">
-                <img src="./assets/images/image-background-3.png" />
+                <img src="./assets/images/image-background-3.png" class="image"/>
               </li>
               <li class="list">
-                <img src="./assets/images/image-background-4.png" />
+                <img src="./assets/images/image-background-4.png" class="image"/>
               </li>
             </ul>
           </div>
@@ -264,7 +273,7 @@
                   </div>
                 </div>
                 <div class="holder-right-pane">
-                  <video class="header-video" autoplay loop muted>
+                  <video class="header-video" autoplay loop controls muted>
                     <source src="./assets/images/THON - DEMO_1.webm" type="video/webm" />
                   </video>
                 </div>
@@ -290,7 +299,7 @@
                   </div>
                 </div>
                 <div class="holder-right-pane">
-                  <video class="header-video" autoplay loop muted>
+                  <video class="header-video" autoplay loop controls muted>
                     <source src="./assets/images/THON - DEMO_1.webm" type="video/webm" />
                   </video>
                 </div>
@@ -313,7 +322,7 @@
                   </div>
                 </div>
                 <div class="holder-right-pane">
-                  <video class="header-video" autoplay loop muted>
+                  <video class="header-video" autoplay loop controls muted>
                     <source src="./assets/images/AKKS video v2_1.webm" type="video/webm" />
                   </video>
                 </div>
@@ -336,7 +345,7 @@
                   </div>
                 </div>
                 <div class="holder-right-pane">
-                  <video class="header-video" autoplay loop muted>
+                  <video class="header-video" autoplay loop controls muted>
                     <source src="./assets/images/Kvik kjøkken_1.webm" type="video/webm" />
                   </video>
                 </div>
@@ -434,7 +443,7 @@
                   <ul class="holder-contact-list">
                     <li class="contact-list">
                       <a href="#" class="contact-link social">
-                        <i class="fab fa-linkedin-in"></i>
+                        <span class="fab fa-linkedin-in"></span>
                       </a>
                     </li>
                     <li class="contact-list">
@@ -458,7 +467,7 @@
                   <ul class="holder-contact-list">
                     <li class="contact-list">
                       <a href="#" class="contact-link social">
-                        <i class="fab fa-linkedin-in"></i>
+                        <span class="fab fa-linkedin-in"></span>
                       </a>
                     </li>
                     <li class="contact-list">
@@ -482,7 +491,7 @@
                   <ul class="holder-contact-list">
                     <li class="contact-list">
                       <a href="#" class="contact-link social">
-                        <i class="fab fa-linkedin-in"></i>
+                        <span class="fab fa-linkedin-in"></span>
                       </a>
                     </li>
                     <li class="contact-list">
@@ -506,7 +515,7 @@
                   <ul class="holder-contact-list">
                     <li class="contact-list">
                       <a href="#" class="contact-link social">
-                        <i class="fab fa-linkedin-in"></i>
+                        <span class="fab fa-linkedin-in"></span>
                       </a>
                     </li>
                     <li class="contact-list">
@@ -530,7 +539,7 @@
                   <ul class="holder-contact-list">
                     <li class="contact-list">
                       <a href="#" class="contact-link social">
-                        <i class="fab fa-linkedin-in"></i>
+                        <span class="fab fa-linkedin-in"></span>
                       </a>
                     </li>
                     <li class="contact-list">
@@ -553,25 +562,27 @@
       <div class="section section-cta">
         <div class="holder-pane">
           <div class="holder-left-pane">
-            <h5 class="title">Hvem er vi i Oslo Digital</h5>
-            <p class="desc">
-              Vi i Oslo Digital har lang erfaring med utvikling av digitale organisasjoner og digitale løsninger fra de største retailerne i Norden.
-            </p>
-            <p class="desc">
-              Fra rene nettbutikker til store omnikanal-aktører. Vår lidenskap ligger i god brukeropplevelse, riktige plattform og moderne salgsmetoder.
-            </p>
-            <strong class="subtitle">Samarbeidspartnere</strong>
-            <ul class="holder-list">
-              <li class="list">
-                <img src="./assets/images/list-image-1.png" class="image xvr" alt="xvr"/>
-              </li>
-              <li class="list">
-                <img src="./assets/images/list-image-2.png" class="image dynamic" alt="xvr"/>
-              </li>
-              <li class="list">
-                <img src="./assets/images/list-image-3.png" class="image commerce" alt="xvr"/>
-              </li>
-            </ul>
+            <div class="holder-text">
+              <h5 class="title">Hvem er vi i Oslo Digital</h5>
+              <p class="desc">
+                Vi i Oslo Digital har lang erfaring med utvikling av digitale organisasjoner og digitale løsninger fra de største retailerne i Norden.
+              </p>
+              <p class="desc">
+                Fra rene nettbutikker til store omnikanal-aktører. Vår lidenskap ligger i god brukeropplevelse, riktige plattform og moderne salgsmetoder.
+              </p>
+              <strong class="subtitle">Samarbeidspartnere</strong>
+              <ul class="holder-list">
+                <li class="list">
+                  <img src="./assets/images/list-image-1.png" class="image xvr" alt="xvr"/>
+                </li>
+                <li class="list">
+                  <img src="./assets/images/list-image-2.png" class="image dynamic" alt="xvr"/>
+                </li>
+                <li class="list">
+                  <img src="./assets/images/list-image-3.png" class="image commerce" alt="xvr"/>
+                </li>
+              </ul>
+            </div>
           </div>  
           <div class="holder-right-pane">
             <div class="holder-form">
@@ -595,17 +606,17 @@
               <ul class="holder-list">
                 <li class="list">
                   <a href="" class="list-link">
-                    <i class="fab fa-linkedin-in icon"></i>
+                    <span class="fab fa-linkedin-in icon"></span>
                   </a>
                 </li>
                 <li class="list">
                   <a href="" class="list-link">
-                    <i class="fab fa-facebook-f icon"></i>
+                    <span class="fab fa-facebook-f icon"></span>
                   </a>
                 </li>
                 <li class="list">
                   <a href="" class="list-link">
-                    <i class="fab fa-instagram icon"></i>
+                    <span class="fab fa-instagram icon"></span>
                   </a>
                 </li>
               </ul>

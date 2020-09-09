@@ -9,8 +9,31 @@
   .section-banner {
     background: url("./../assets/images/banner.png") 0% 0% no-repeat;
     background-position: center;
-  }
 
+    .scrollIndicatorBlock{
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .link {
+      color: $white;
+      text-decoration: none;
+    }
+
+    .scrollIndicatorIcon {
+      animation-duration: 1.8s;
+      animation-iteration-count: infinite;
+      transform-origin: bottom;
+      text-align: center;
+
+      .fa-angle-down {  
+        font-size: 24px;
+      }
+    }
+
+  }
   .section-vi-setter {
     .fp-tableCell {
       display: flex;
@@ -102,7 +125,7 @@
     }
   }
 
-  .section-background {
+  .section-clients {
     .holder-pane {
       display: flex;
       height: 100%;
@@ -112,10 +135,15 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 0 100px;
       width: 50%;
       height: 100%;
       background-color: #ebebeb;
+    }
+
+    .holder-text {
+      padding: 15px;
+      max-width: 610px;
+      margin: 0 auto;
     }
 
     .holder-right-pane {
@@ -123,6 +151,14 @@
       align-items: center;
       justify-content: center;
       width: 50%;
+    }
+
+    .holder-images-list {
+      padding: 15px;
+    }
+
+    .image {
+      width: 100%;
     }
 
     .list {
@@ -474,11 +510,16 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 75px;
       width: 50%;
 
       background-color: #EBEBEB;
-      
+
+      .holder-text {
+        padding: 15px;
+        max-width: 610px;
+        margin: 0 auto;
+      }
+
       .image {
         &.xvr {
           width: 65px;
@@ -607,3 +648,17 @@
   }
 }
 
+@include respond-to(lg-down) {
+  .home {
+    .section-team {
+      .list {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include respond-to(md-down) {
+  .home {
+  }
+}
