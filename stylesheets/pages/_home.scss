@@ -202,10 +202,6 @@
       color: #707070;
     }
 
-    .title {
-      font-size: 47px;
-    }
-
     .desc {
       margin-bottom: 39px;
 
@@ -591,7 +587,6 @@
 
     .title {
       margin-bottom: 16px;
-      font-size: 47px;
     }
     
     .desc {
@@ -822,6 +817,7 @@
     }
 
     .section-newsletter {
+      padding: 15px 0;
 
       .holder-form-group {
         flex-wrap: wrap;
@@ -852,7 +848,20 @@
       }
     }
 
+    .section-team {
+      padding: 15px 0;
+
+      .holder-team {
+        padding: 0;
+      }
+
+      .title {
+        margin-bottom: 25px;
+      }
+    }
+
     .section-cta {
+
       .holder-pane {
         flex-wrap: wrap;
       }
@@ -876,6 +885,109 @@
 
       .holder-right-pane {
         width: 100%;
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .home {
+    .section-team {
+      .image {
+        height: 100px;
+      }
+
+      .list {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .holder-text {
+        margin-left: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .holder-contact-list {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 3px;   
+      }
+
+      .contact-list {
+        margin: 2px 6px;
+        margin-left: 0;
+
+        &:nth-of-type(1) {
+          order: 3;
+        }
+
+        &:nth-of-type(2) {
+          order: 2;
+        }
+
+        
+        &:nth-of-type(3) {
+          order: 1;
+        }
+      }
+
+      .name {
+        margin-bottom: 2px;
+        font-size: 16px;
+      }
+
+      .position {
+        margin-bottom: 2px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 768px) {
+  .home {
+    .section-about {
+      .holder-list {
+        margin-top: 15px;
+      }
+
+      .desc,
+      .list-text {
+        font-size: 18px;
+      }
+    }
+
+    .section-portfolio {
+      .desc {
+        font-size: 18px;
+      }
+    }
+
+    .section-video {
+      .desc {
+        font-size: 18px;
+      }
+    }
+
+    .section-cta {
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .desc {
+        font-size: 18px;
+        line-height: 27px;
+      }
+
+      .social-text {
+        margin: 20px 0 10px;
+      }
+    }
+
+    .section-newsletter {
+      .holder-newsletter {
+        margin-bottom: 40px;
       }
     }
   }

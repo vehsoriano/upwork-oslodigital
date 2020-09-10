@@ -9,6 +9,8 @@
         font-size: 21px;
         font-family: 'PT Sans', sans-serif;
 
+        transition: all .3s ease;
+
         input:-webkit-autofill {
             -webkit-text-fill-color: yellow !important;
         }
@@ -76,3 +78,12 @@
         
     }
 }
+
+
+@media (min-width: 1366px) and (max-height: 768px) {
+    .form {
+        .form-input {
+            font-size: 18px;
+        }
+    }
+  }

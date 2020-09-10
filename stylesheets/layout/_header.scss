@@ -61,3 +61,19 @@
         }
     }
 }
+
+@include respond-to(md-down) {
+    .header {
+        .navbar-brand {
+            display: none;
+        }
+
+        .navbar {
+            padding: 15px 0;
+        }
+
+        .nav-item {
+            font-size: 14px;
+        }
+    }
+}

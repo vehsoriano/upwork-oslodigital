@@ -12,11 +12,15 @@ body {
 .title {
   font-size: 47px;
   font-family: 'DM Serif Display', serif;
+
+  transition: all .3s ease;
 }
 
 .desc,
 .text {
   font-family: 'PT Sans', sans-serif;
+
+  transition: all .3s ease;
 }
 
 @include respond-to(lg) {
@@ -29,5 +33,11 @@ body {
 @include respond-to(md-down) {
   .title {
     font-size: 27px;
+  }
+}
+
+@media (min-width: 1366px) and (max-height: 768px) {
+  .title {
+    font-size: 30px;
   }
 }
