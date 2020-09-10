@@ -910,13 +910,13 @@
 
       .holder-contact-list {
         align-items: flex-start;
-        flex-direction: column;
-        margin-top: 3px;   
+        flex-direction: column; 
       }
 
       .contact-list {
-        margin: 2px 6px;
+        margin: 3.5px 6px;
         margin-left: 0;
+        font-size: 16px;
 
         &:nth-of-type(1) {
           order: 3;
@@ -934,12 +934,12 @@
 
       .name {
         margin-bottom: 2px;
-        font-size: 16px;
+        font-size: 18px;
       }
 
       .position {
-        margin-bottom: 2px;
-        font-size: 14px;
+        margin-bottom: 3px;
+        font-size: 17px;
       }
     }
   }
