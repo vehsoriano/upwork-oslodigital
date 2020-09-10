@@ -18,3 +18,16 @@ body {
 .text {
   font-family: 'PT Sans', sans-serif;
 }
+
+@include respond-to(lg) {
+  .title {
+    font-size: 37px;
+  }
+}
+
+
+@include respond-to(md-down) {
+  .title {
+    font-size: 27px;
+  }
+}

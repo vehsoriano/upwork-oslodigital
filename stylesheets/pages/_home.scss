@@ -313,8 +313,18 @@
     .holder-left-pane {
       width: 50%;
 
-      background: url('./../assets/images/ecommerce-case.png');
+      &.green-deal {
+        background: url('./../assets/images/ecommerce-case.png') 0% 0% no-repeat;
+        background-size: cover;
+      }
 
+      &.lumier {
+        background-color: #00a2b1;
+        
+        .holder-text {
+          color: $black;
+        }
+      }
     }
 
     .holder-right-pane {
@@ -365,15 +375,7 @@
 
       &.thon {
         background: url('./../assets/images/vr-cases.png');
-      }
-
-      &.lumier {
-        background-color: #00a2b1;
-        
-        .holder-text {
-          color: $black;
-        }
-      }
+      }    
 
       &.akershus {
         background-color: #ebebeb;
@@ -726,8 +728,10 @@
   .home {
 
     .section-banner {
-      height: 100vh;
+      height: 500px;
       width: 100vw;
+      background-size: cover;
+      position: relative;
     }
 
     .section-about {
@@ -743,6 +747,12 @@
         width: 100%;
         height: 50vh;
         order: 1;
+
+        &.strategy,
+        &.technology,
+        &.social {
+          background-size: auto;
+        }
       }
     }
 
@@ -751,17 +761,20 @@
 
       .holder-pane {
         flex-wrap: wrap;
+        height: 100%;
       }
 
       .holder-left-pane {
         width: 100%;
-        order: 1;
+        height: 100%;
+        order: 2;
+        padding: 25px 0;
       }
 
       .holder-right-pane {
         width: 100%;
         height: 50vh;
-        order: 2;
+        order: 1;
       }
     }
 
@@ -772,15 +785,97 @@
         flex-wrap: wrap;
       }
 
+      .header-video {
+        object-fit: none;
+        object-position: top;
+      }
+
       .holder-left-pane {
         width: 100%;
-        order: 1;
+        order: 2;
       }
 
       .holder-right-pane {
         width: 100%;
         height: 50vh;
-        order: 2;
+        order: 1;
+      }
+    }
+
+    .section-clients {
+      .holder-pane {
+        height: 100%;
+
+        flex-wrap: wrap;
+      }
+
+      .holder-left-pane {
+        width: 100%;
+        padding: 25px 0;
+        // order: 2;
+      }
+
+      .holder-right-pane {
+        width: 100%;
+        // order: 1;
+      }
+    }
+
+    .section-newsletter {
+
+      .holder-form-group {
+        flex-wrap: wrap;
+      }
+
+      .form-group-input {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .holder-button {
+        display: flex;
+        margin-top: 25px;
+        width: 100%;
+      }
+
+      .form-button {
+        margin-left: auto;
+      }
+
+      .form-input {
+        max-width: 100%;
+        width: 100%;
+
+        &::placeholder {
+          text-align: right;
+        }
+      }
+    }
+
+    .section-cta {
+      .holder-pane {
+        flex-wrap: wrap;
+      }
+
+      .holder-form {
+        padding: 15px;
+      }
+
+      .holder-list {
+        flex-wrap: wrap;
+        margin-top: 15px;
+      }
+
+      .list {
+        margin-bottom: 15px;
+      }
+
+      .holder-left-pane {
+        width: 100%;
+      }
+
+      .holder-right-pane {
+        width: 100%;
       }
     }
   }
