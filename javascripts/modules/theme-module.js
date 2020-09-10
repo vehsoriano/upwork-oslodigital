@@ -24,11 +24,7 @@ AppName.Modules.ThemeModule = (function () {
   /////////////////////
   // Public Methods //
   ///////////////////
-  // $(window).resize(function() {
-  //   if($(window).width() < 991) {
-  //     window.location.reload();
-  //   }
-  // });
+
   
   $(document).ready(function () {
     if($(window).width() > 991) {
