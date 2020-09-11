@@ -79,11 +79,33 @@
     }
 }
 
+@include respond-to(md-down) {
+    .form {
+        .form-input {
+            font-size: 15px;
+            height: 40px;
+
+            &.hw-input {
+                width: 100%;
+            }
+        }
+
+        .form-button {
+            height: 45px;
+            font-size: 14px;
+        }
+    }
+}
 
 @media (min-width: 1366px) and (max-height: 768px) {
     .form {
         .form-input {
             font-size: 18px;
         }
+
+        .form-button {
+            height: 45px;
+            font-size: 14px;
+        }
     }
-  }
+}

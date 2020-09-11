@@ -14,14 +14,37 @@
 
     .navbar-nav {
         flex-direction: row;
-    }
 
-    .icon {
-        fill: white;
+        &.black-text {
+            .nav-link,
+            .span {
+                color: $black;
+            }
+
+        }        
     }
 
     .navbar {
-        padding: 35px 25px;
+        padding: 5px 25px;
+    }
+
+    .navbar-brand {
+        transition: all .3s ease;
+
+        .icon {
+            fill: black;
+            transition: all .3s ease;
+        }
+
+        &.hidden {
+            opacity: 0;
+        }
+
+        &.white-icon {
+            .icon {
+                fill: white;
+            }
+        }
     }
 
     .nav-item {
@@ -64,6 +87,8 @@
 
 @include respond-to(md-down) {
     .header {
+        position: absolute;
+
         .navbar-brand {
             display: none;
         }

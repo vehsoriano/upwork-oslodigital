@@ -54,6 +54,11 @@
       justify-content: center;
     }
 
+    .desc,
+    .list-text {
+      font-size: 18px;
+    }
+
     .holder-text {
       width: 50%;
     }
@@ -78,7 +83,7 @@
     }
 
     .holder-list {
-      margin-top: 50px;
+      margin-top: 25px;
     }
 
     .title {
@@ -91,7 +96,7 @@
 
     .list-title {
       font-weight: bold;
-      font-size: 21px;
+      font-size: 18px;
     }
 
     .list-text {
@@ -122,7 +127,7 @@
 
     .list-title {
       font-weight: bold;
-      font-size: 21px;
+      font-size: 18px;
     }
 
     .list-text {
@@ -206,7 +211,7 @@
       margin-bottom: 39px;
 
       color: #707070;
-      font-size: 21px;
+      font-size: 18px;
     }
 
     .form-button {
@@ -217,7 +222,7 @@
       background-color: #000000;
       color: #ffffff;
       font-family: "PT Sans";
-      font-size: 21px;
+      font-size: 18px;
       font-weight: 700;
       height: 60px;
       line-height: 35px;
@@ -456,12 +461,12 @@
     }
 
     .name {
-      font-size: 21px;
+      font-size: 18px;
       font-weight: bold;
     }
 
     .position {
-      font-size: 21px;
+      font-size: 18px;
     }
 
     .holder-list {
@@ -577,6 +582,18 @@
     .list {
       display: flex;
       align-items: center;
+
+      &:first-child {
+        .list-link {
+          margin-left: 0;
+        }
+      }
+
+      &:last-child {
+        .list-link {
+          margin-right: 0;
+        }
+      }
     }
 
     .holder-right-pane {
@@ -595,13 +612,13 @@
 
       color: #707070;
       line-height: 35px;
-      font-size: 21px;
+      font-size: 18px;
     }
 
     .subtitle {
       margin: 19px 0 25px;
 
-      font-size: 21px;
+      font-size: 18px;
       color: #000;
     }
 
@@ -835,16 +852,19 @@
       }
 
       .form-button {
-        margin-left: auto;
+        // margin-left: auto;
+        width: 190px;
+        height: auto;
+        font-size: 15px;
       }
 
       .form-input {
         max-width: 100%;
         width: 100%;
 
-        &::placeholder {
-          text-align: right;
-        }
+        // &::placeholder {
+        //   text-align: right;
+        // }
       }
     }
 
@@ -867,12 +887,16 @@
       }
 
       .holder-form {
-        padding: 15px;
+        padding: 50px 20px;
       }
 
       .holder-list {
         flex-wrap: wrap;
-        margin-top: 15px;
+        // margin-top: 15px;
+      }
+
+      .form-group-button {
+        margin-top: 30px;
       }
 
       .list {
@@ -893,6 +917,12 @@
 @include respond-to(xs) {
   .home {
     .section-team {
+
+
+      .title {
+        text-align: center;;
+      }
+
       .image {
         height: 100px;
       }
@@ -900,35 +930,44 @@
       .list {
         flex-wrap: wrap;
         align-items: center;
+        flex-direction: column;
       }
 
       .holder-text {
-        margin-left: 25px;
+        margin-top: 8px;
+        margin-left: 0;
+        width: 100%;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
       }
 
       .holder-contact-list {
-        align-items: flex-start;
-        flex-direction: column; 
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;  
+        max-width: 320px  
+      }
+
+      .contact-link {
+        font-size: 15px;
       }
 
       .contact-list {
-        margin: 3.5px 6px;
+        margin: 3px;
         margin-left: 0;
-        font-size: 16px;
+        font-size: 15px;
 
-        &:nth-of-type(1) {
-          order: 3;
+        &:first-child {
+          margin-left: 0;
         }
 
-        &:nth-of-type(2) {
-          order: 2;
-        }
+        // &:nth-of-type(2) {
+        //   order: 2;
+        // }
 
         
-        &:nth-of-type(3) {
-          order: 1;
+        &:last-child {
+          margin-right: 0;
         }
       }
 
@@ -939,7 +978,7 @@
 
       .position {
         margin-bottom: 3px;
-        font-size: 17px;
+        font-size: 16px;
       }
     }
   }
@@ -954,19 +993,19 @@
 
       .desc,
       .list-text {
-        font-size: 18px;
+        font-size: 15px;
       }
     }
 
     .section-portfolio {
       .desc {
-        font-size: 18px;
+        font-size: 15px;
       }
     }
 
     .section-video {
       .desc {
-        font-size: 18px;
+        font-size: 15px;
       }
     }
 
@@ -976,7 +1015,7 @@
       }
 
       .desc {
-        font-size: 18px;
+        font-size: 15px;
         line-height: 27px;
       }
 

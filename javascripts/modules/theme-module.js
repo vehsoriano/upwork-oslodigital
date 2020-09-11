@@ -9,9 +9,9 @@ AppName.Modules.ThemeModule = (function () {
     var main = $('main');
 
     if (main.hasClass('no')) {
-      console.log(navBar.find(navItem[0]).addClass('no'))
+      navBar.find(navItem[0]).addClass('no')
     } else if(main.hasClass('eng')) {
-      console.log(navBar.find(navItem[0]).addClass('eng'))
+      navBar.find(navItem[0]).addClass('eng')
     } 
   }
   //////////////////////
@@ -33,6 +33,81 @@ AppName.Modules.ThemeModule = (function () {
         // sectionsColor: ["yellow", "orange", "#C0C0C0", "#ADD8E6"],
         anchors:['home', 'about-strategy', 'about-technology', 'about-social', 'clients', 'e-commerce', 'cases', 'newsletter', 'our-team', 'contact-us'],
         // scrollBar:true
+        // afterRender: function(){
+        //   $('#icon').removeClass('hidden')
+        // },
+        onLeave: function(origin, destination, direction){
+          var leavingSection = this;
+
+          console.log(destination)
+      
+          //after leaving section 2
+          if(origin.index == 0 && direction =='down'){
+            $('#icon').removeClass('hidden')
+          }
+
+          if(origin.index == 1 && direction =='up'){
+            $('#icon').addClass('hidden')
+            $('#navbar-nav').removeClass('black-text')
+          }
+
+          if(origin.index == 1 && direction =='down'){
+            $('#icon').addClass('white-icon')
+            $('#navbar-nav').addClass('black-text')
+          }
+
+          if(origin.index == 2 && direction =='down'){
+            $('#icon').removeClass('white-icon')
+            $('#navbar-nav').removeClass('black-text')
+          }
+
+          if(origin.index == 2 && direction =='up'){
+            $('#icon').removeClass('white-icon')
+            $('#navbar-nav').removeClass('black-text')
+          }
+
+          if(origin.index == 3 && direction =='up'){
+            $('#icon').addClass('white-icon')
+            $('#navbar-nav').addClass('black-text')
+          }
+
+          if(origin.index == 3 && direction =='down'){
+            $('#navbar-nav').addClass('black-text')
+          }
+
+          if(origin.index == 4 && direction =='up'){
+            $('#icon').removeClass('white-icon')
+            $('#navbar-nav').removeClass('black-text')
+          }
+
+          if(origin.index == 5 && direction =='up'){
+            $('#icon').removeClass('white-icon')
+          }
+
+          if(origin.index == 4 && direction =='down'){
+            $('#icon').addClass('white-icon')
+          }
+
+          if(origin.index == 5 && direction =='down'){
+            $('#icon').removeClass('white-icon')
+          }
+
+          if(origin.index == 6 && direction =='up'){
+            $('#icon').removeClass('white-icon')
+          }
+
+          if(origin.index == 6 && direction =='up'){
+            $('#icon').addClass('white-icon')
+          }
+
+          if(origin.index == 8 && direction =='down'){
+            $('#navbar-nav').removeClass('black-text')
+          }
+
+          if(origin.index == 9 && direction =='up'){
+            $('#navbar-nav').addClass('black-text')
+          }
+        }
       });
     }
   })
@@ -56,7 +131,7 @@ AppName.Modules.ThemeModule = (function () {
     });
   
     var swiperNewsletter = new Swiper(".swiper-container.newsletter", {
-      slidesPerView: 'auto',
+      slidesPerView: 1,
       spaceBetween: 30,
       // autoHeight: true,
       // loop: true,
@@ -64,6 +139,7 @@ AppName.Modules.ThemeModule = (function () {
         // when window width is >= 320px
         991: {
           autoHeight: true,
+          slidesPerView: 'auto',
         },
       }
     });
